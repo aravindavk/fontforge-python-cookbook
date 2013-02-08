@@ -23,6 +23,6 @@ if __name__ == "__main__":
         print "USAGE: python generate_featurefile.py <font/sfd file> <featurefile>"
     else:
         font = fontforge.open(sys.argv[1])
-        font.getFeatureFile(sys.argv[2])
+        font.generateFeatureFile(sys.argv[2])
         font.close()
         print "[OK] Font featurefile generated"
